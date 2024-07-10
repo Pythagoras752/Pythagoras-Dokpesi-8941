@@ -8,9 +8,9 @@ namespace HPlusSport.API.Models
         public static void Data(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Illnesses>().HasData(
-                new Illnesses { Id = 1, Name = "COVID-19", Description = "Coronavirus disease 2019" },
-                new Illnesses { Id = 2, Name = "Influenza", Description = "Seasonal flu" },
-                new Illnesses { Id = 3, Name = "Hypertension", Description = "High blood pressure" }
+                new Illnesses { Id = 1, Name = "COVID-19", Description = "Coronavirus disease 2019", Origin = "Unknown" },
+                new Illnesses { Id = 2, Name = "Influenza", Description = "Seasonal flu", Origin = "Viral" },
+                new Illnesses { Id = 3, Name = "Hypertension", Description = "High blood pressure", Origin = "Lifestyle and genetic factors" }
             );
 
             modelBuilder.Entity<Symptom>().HasData(
